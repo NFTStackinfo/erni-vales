@@ -1,29 +1,19 @@
-const teamList = [
-      {
-          position: "Paragraph",
-          name: "Name example",
-          img: "/assets/team/1.jpg",
-      },
-      {
-          position: "Paragraph",
-          name: "Name example",
-          img: "/assets/team/1.jpg",
-      },
-      {
-          position: "Paragraph",
-          name: "Name example",
-          img: "/assets/team/1.jpg",
-      },
-      {
-          position: "Paragraph",
-          name: "Name example",
-          img: "/assets/team/1.jpg",
-      },
-      {
-          position: "Paragraph",
-          name: "Name example",
-          img: "/assets/team/1.jpg",
-      },
-];
+export const teamList = [
+  {
+    img: '/assets/team/team-1.svg',
+    name: <>NFT Stack <br/>Development</>,
+    link: ''
+  },
 
-export default teamList;
+  {
+    img: '/assets/team/team-2.svg',
+    name: <>Erni <br/> And Frens</>,
+    link: ''
+  },
+
+  {
+    img: '/assets/team/team-3.svg',
+    name: <>Agency <br/>Of Abundance</>,
+    link: 'https://nftstack.info/'
+  }
+]

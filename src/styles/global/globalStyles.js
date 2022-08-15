@@ -114,7 +114,7 @@ export const GlobalStyle = createGlobalStyle`
 
   /*global*/
   body {
-    font-family: ${({ theme }) => theme.font.primary};
+    font-family: ${({ theme }) => theme.font.secondary};
     font-size: ${({ theme }) => theme.font.size.p1.base};
     color: ${({ theme }) => theme.colors.lightText};
     font-weight: 400;
@@ -150,12 +150,12 @@ export const GlobalStyle = createGlobalStyle`
   h1, .text-h1, h2, .text-h2 {
     font-size: ${({ theme }) => theme.font.size.h1.base};
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-      font-size: ${({ theme }) => theme.font.size.h1.sm};
-    }
-
     @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
       font-size: ${({ theme }) => theme.font.size.h1.lg};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      font-size: ${({ theme }) => theme.font.size.h1.sm};
     }
   }
 
