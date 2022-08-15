@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const ButtonStyle = styled.a`
   height: 62px;
@@ -7,7 +7,7 @@ export const ButtonStyle = styled.a`
   transition: 0.3s;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: ${({ theme }) => theme.font.size.h4};
+  font-size: 22px;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -15,23 +15,23 @@ export const ButtonStyle = styled.a`
 
   .icon {
     margin-right: 12px;
+
     path {
       transition: 0.3s;
     }
   }
 
   ${({ variant }) =>
-    variant === "primary" &&
+    variant === 'primary' &&
     css`
-      background-color: ${({ theme }) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.black};
 
       &:hover {
-        background-color: ${({ theme }) => theme.colors.secondaryLight};
+        background-color: ${({ theme }) => theme.colors.white};
       }
     `}
-
   ${({ variant }) =>
-    variant === "outlined" &&
+    variant === 'outlined' &&
     css`
       background-color: transparent;
       border: 2px solid ${({ theme }) => theme.colors.black};
@@ -47,11 +47,8 @@ export const ButtonStyle = styled.a`
         }
       }
     `}
-
-
-
   &.fade-in-button {
     opacity: 1;
     visibility: visible;
   }
-`;
+`

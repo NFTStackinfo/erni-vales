@@ -1,5 +1,5 @@
-import { createGlobalStyle, keyframes } from "styled-components";
-import {generateSpaceClassNames} from "../../utils/utils";
+import { createGlobalStyle, keyframes } from 'styled-components'
+import { generateSpaceClassNames } from '../../utils/utils'
 
 const fadeIn = keyframes`
   from {
@@ -8,9 +8,17 @@ const fadeIn = keyframes`
   to {
     opacity: 1
   }
-`;
+`
 
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Ginto Nord';
+    src: url('/assets/fonts/GintoNord-Black.woff') format('woff2'),
+    url('/assets/fonts/GintoNord-Black.woff') format('woff'),
+    url('/assets/fonts/GintoNord-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+
   /*reset*/
   html, body, div, span, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -107,19 +115,22 @@ export const GlobalStyle = createGlobalStyle`
   /*global*/
   body {
     font-family: ${({ theme }) => theme.font.primary};
-    font-size: ${({ theme }) => theme.font.size.subheading1};
+    font-size: ${({ theme }) => theme.font.size.p1.base};
     color: ${({ theme }) => theme.colors.lightText};
     font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 0.1em;
-    background: #FCFCFC;
+    line-height: 1.15;
+    background: ${({ theme }) => theme.colors.white};
   }
 
   .container {
-    max-width: 1152px;
+    max-width: 1200px;
     width: 100%;
-    padding: 0 16px;
     margin: auto;
+    padding: 0 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        padding: 0 24px;
+    }
   }
 
   .main-wrapper {
@@ -128,39 +139,49 @@ export const GlobalStyle = createGlobalStyle`
 
   /*typography*/
 
-  h1, h2, .h1, .h2 {
-    line-height: 1.2;
-    font-family: ${({ theme }) => theme.font.secondary};
+  h1, h2, .text-h1, .text-h2 {
+    line-height: 1.1;
+    font-family: ${({ theme }) => theme.font.primary};
     color: ${({ theme }) => theme.colors.black};
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 700;
+    font-weight: 900;
   }
 
-  h1, .h1 {
+  h1, .text-h1, h2, .text-h2 {
     font-size: ${({ theme }) => theme.font.size.h1.base};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      font-size: ${({ theme }) => theme.font.size.h1.sm};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: ${({ theme }) => theme.font.size.h1.lg};
+    }
   }
 
-  h2, .h2 {
-    font-size: ${({ theme }) => theme.font.size.h2};
+  .text-p1 {
+    font-size: ${({ theme }) => theme.font.size.p1.base};
+    font-family: ${({ theme }) => theme.font.secondary};
+    line-height: 1.15;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+      font-size: ${({ theme }) => theme.font.size.p1.md};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: ${({ theme }) => theme.font.size.p1.lg};
+    }
   }
 
-  h3, .h3 {
-    font-size: ${({ theme }) => theme.font.size.h3};
-  }
-
-  h4, .h4 {
-    font-size: ${({ theme }) => theme.font.size.h4};
+  .text-c {
+    font-size: ${({ theme }) => theme.font.size.c};
+    font-family: ${({ theme }) => theme.font.secondary};
+    line-height: 1.16;
+    font-weight: 500;
   }
 
 
   /*colors*/
-  .color-primary {
-    color: ${({ theme }) => theme.colors.primary};
-  }
-
-
-
   /*animations*/
   .animated {
     opacity: 0;
@@ -177,6 +198,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .list-dash {
     margin-left: 20px;
+
     li {
       list-style-type: '- ';
       margin-bottom: 12px;
@@ -187,44 +209,5 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  ${({theme}) => generateSpaceClassNames(theme.spaces)}
-
-  /*media queries*/
-  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
-    h1, .h1 {
-      font-size: ${({ theme }) => theme.font.size.h1.lg};
-    }
-    h2, .h2 {
-      font-size: ${({ theme }) => theme.font.size.h2.lg};
-    }
-    h3, .h3 {
-      font-size: ${({ theme }) => theme.font.size.h3.lg};
-    }
-    h4, .h4 {
-      font-size: ${({ theme }) => theme.font.size.h4.lg};
-    }
-    body {
-      font-size: ${({theme}) => theme.font.size.subheading1};
-    }
-  }
-
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    h1, .h1 {
-      font-size: ${({ theme }) => theme.font.size.h1.sm};
-    }
-    h2, .h2 {
-      font-size: ${({ theme }) => theme.font.size.h2.sm};
-    }
-    h3, .h3 {
-      font-size: ${({ theme }) => theme.font.size.h3.sm};
-    }
-    h4, .h4 {
-      font-size: ${({ theme }) => theme.font.size.h4.sm};
-    }
-    body {
-      font-size: ${({theme}) => theme.font.size.overline};
-    }
-  }
-
-`;
+  ${({ theme }) => generateSpaceClassNames(theme.spaces)}
+`

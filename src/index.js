@@ -7,12 +7,10 @@ import { theme } from "./styles/global/theme";
 import { GlobalStyle } from "./styles/global/globalStyles";
 import store from './redux/store'
 import { Provider } from 'react-redux'
-import FontStyles from "./styles/global/fontStyles";
 
 ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-      <FontStyles />
       <GlobalStyle />
       <App />
     </ThemeProvider>

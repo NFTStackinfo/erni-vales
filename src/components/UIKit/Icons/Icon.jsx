@@ -1,10 +1,9 @@
 import * as React from "react";
 import IcomoonReact from "icomoon-react";
 import iconSet from "./selection.json";
-import { theme } from "../../../styles/global/theme";
 
 export const Icon = ({
-  color = theme.colors.white,
+  color,
   size = 44,
   name,
   className = "",
