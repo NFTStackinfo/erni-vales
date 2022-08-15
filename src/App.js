@@ -20,7 +20,7 @@ function App() {
   // const utilitiesRef = useRef(null);
   // const roadmapRef = useRef(null);
   const teamRef = useRef(null);
-  // const faqRef = useRef(null);
+  const faqRef = useRef(null);
   //
   // useEffect(() => {
   //   window.history.scrollRestoration = "manual";
@@ -75,8 +75,8 @@ function App() {
         {/*<Hero ref={heroRef} loading={loading} />*/}
         {/*<About ref={aboutRef} />*/}
         {/*<Roadmap ref={roadmapRef} />*/}
+        <FAQ ref={faqRef} />
         <Team ref={teamRef} />
-        {/*<FAQ ref={faqRef} />*/}
         {/*<Footer />*/}
       </div>
     </main>
