@@ -4,7 +4,7 @@ import iconSet from "./selection.json";
 import { theme } from "../../../styles/global/theme";
 
 export const Icon = ({
-  color = theme.colors.white,
+  color = theme.colors.black,
   size = 44,
   name,
   className = "",
