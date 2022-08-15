@@ -11,6 +11,14 @@ const fadeIn = keyframes`
 `
 
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Ginto Nord';
+    src: url('/assets/fonts/GintoNord-Black.woff') format('woff2'),
+    url('/assets/fonts/GintoNord-Black.woff') format('woff'),
+    url('/assets/fonts/GintoNord-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+
   /*reset*/
   html, body, div, span, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,

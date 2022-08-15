@@ -13,6 +13,8 @@ export const Team = forwardRef(({}, ref) => {
       <Icon name="close" color="black"/>
       <Icon name="discord" color="black"/>
       <Icon name="twitter" color="black"/>
+
+      <h1 >Hello world</h1>
     </TeamStyle>
   )
 })
