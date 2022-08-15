@@ -77,7 +77,7 @@ function App() {
         {/*<Roadmap ref={roadmapRef} />*/}
         <FAQ ref={faqRef} />
         <Team ref={teamRef} />
-        {/*<Footer />*/}
+        <Footer />
       </div>
     </main>
   );
