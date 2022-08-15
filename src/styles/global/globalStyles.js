@@ -138,6 +138,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   /*typography*/
+  h3, h4, h5, h6, p, a, span, div, button {
+    font-family: ${({ theme }) => theme.font.secondary};
+    font-weight: 400;
+  }
 
   h1, h2, .text-h1, .text-h2 {
     line-height: 1.1;

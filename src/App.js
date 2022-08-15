@@ -9,6 +9,9 @@ import FAQ from "./components/FAQ/FAQ";
 import Preloader from "./components/Preloader/PreloaderDynamic";
 import { useLockedBody } from "./hooks/useLockedBody";
 import About from "./components/About/About";
+import {
+  JoinTheCommunity
+} from './components/JoinTheCommunity/JoinTheCommunity'
 const scrollIntoView = require("scroll-into-view");
 
 function App() {
@@ -77,6 +80,7 @@ function App() {
         {/*<Roadmap ref={roadmapRef} />*/}
         <FAQ ref={faqRef} />
         <Team ref={teamRef} />
+        <JoinTheCommunity />
         <Footer />
       </div>
     </main>
