@@ -85,6 +85,7 @@ export const ModalContent = styled.div`
   background-image: url("/assets/team/modal/modal-bg.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 45% auto;
 
 `
 
@@ -138,5 +139,7 @@ export const ModalText = styled.div`
     font-size: 22px;
     line-height: 26px;
     margin-top: 10px;
+
+    max-width: 91%;
   }
 `

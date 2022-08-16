@@ -8,7 +8,8 @@ export const Modal = ({ isActive, children }) => {
   const [, setLocked] = useLockedBody()
 
   useEffect(() => {
-    setLocked(() => isActive)
+    console.log('isActive', isActive)
+    setLocked(isActive)
   }, [isActive])
 
   return (

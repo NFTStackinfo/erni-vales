@@ -29,28 +29,31 @@ export const Team = forwardRef(({}, ref) => {
 
           <TeamList>
             {
-              teamList.map((item, idx) => (<>
-                <div className={`img-wrapper img-wrapper-${idx + 1}`}>
-                  <img src={item.img} alt={item.name} />
-                </div>
+              teamList.map((item, idx) => (
+                <React.Fragment key={`team-member-${idx}`}>
+                  <div className={`img-wrapper img-wrapper-${idx + 1}`}>
+                    <img src={item.img} alt={item.name} />
+                  </div>
 
-                <h3 className={`name name-${idx + 1}`}>{item.name}</h3>
+                  <h3 className={`name name-${idx + 1}`}>{item.name}</h3>
 
-                {item?.seeMore ? (
-                  <button
-                    className={`see-more see-more-${idx + 1}`}
-                    onClick={() => seeMore(item.seeMore)}
-                  >
-                    SEE MORE
-                  </button>
-                ) : <div  className={`see-more see-more-${idx + 1}`}/>}
+                  {item?.seeMore ? (
+                    <button
+                      className={`see-more see-more-${idx + 1}`}
+                      onClick={() => seeMore(item.seeMore)}
+                    >
+                      SEE MORE
+                    </button>
+                  ) : <div className={`see-more see-more-${idx + 1}`} />}
 
 
-                <ModalSeeMore isActive={isModalActive} toggleModal={toggleModal}
-                              company={company} />
-              </>))}
-
+                </React.Fragment>))}
           </TeamList>
+
+          <ModalSeeMore
+            isActive={isModalActive} toggleModal={toggleModal}
+            company={company}
+          />
         </div>
       </div>
     </TeamStyle>
