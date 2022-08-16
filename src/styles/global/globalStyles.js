@@ -147,8 +147,11 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.1;
     font-family: ${({ theme }) => theme.font.primary};
     color: ${({ theme }) => theme.colors.black};
-    text-transform: uppercase;
     font-weight: 900;
+  }
+
+  h1 {
+    text-transform: uppercase;
   }
 
   h1, .text-h1, h2, .text-h2 {

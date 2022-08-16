@@ -109,6 +109,14 @@ export const ModalText = styled.div`
   margin-left: 42px;
   width: 100%;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
+      margin-left: 32px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      margin-left: 24px;
+  }
+
   >div {
     >button {
       background-color: black;
