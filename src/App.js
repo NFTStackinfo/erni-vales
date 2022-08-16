@@ -21,7 +21,7 @@ function App() {
   // const heroRef = useRef(null);
   // const aboutRef = useRef(null);
   // const utilitiesRef = useRef(null);
-  // const roadmapRef = useRef(null);
+  const roadmapRef = useRef(null);
   const teamRef = useRef(null);
   const faqRef = useRef(null);
   //
@@ -77,7 +77,7 @@ function App() {
       <div className="main-wrapper">
         {/*<Hero ref={heroRef} loading={loading} />*/}
         {/*<About ref={aboutRef} />*/}
-        {/*<Roadmap ref={roadmapRef} />*/}
+        <Roadmap ref={roadmapRef} />
         <FAQ ref={faqRef} />
         <Team ref={teamRef} />
         <JoinTheCommunity />

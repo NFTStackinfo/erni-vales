@@ -119,7 +119,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.lightText};
     font-weight: 400;
     line-height: 1.15;
-    background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.black};
   }
 
   .container {

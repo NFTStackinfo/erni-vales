@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FAQStyle = styled.section`
-  padding-top: 22px;
+  margin-top: 12px;
   background-color: ${({ theme }) => theme.colors.black};
 
   .wrapper {
@@ -12,12 +12,13 @@ export const FAQStyle = styled.section`
       padding-top: 140px;
       padding-bottom: 140px;
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 
   .content {
     display: flex;
@@ -38,7 +39,7 @@ export const FAQStyle = styled.section`
   }
 `
 
-export const FAQTopImg= styled.div`
+export const FAQTopImg = styled.div`
   img {
     width: 100%;
     height: auto;
@@ -55,7 +56,7 @@ export const QuestionsContainer = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-      margin-top: 26px;
+    margin-top: 26px;
   }
 
   .Collapsible {
