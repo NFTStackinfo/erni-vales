@@ -59,7 +59,7 @@ export const TeamList = styled.div`
   grid-template-areas:
     "img-1 img-2 img-3"
     "name-1 name-2 name-3"
-    "link-1 link-2 link-3";
+    "see-more-1 see-more-2 see-more-3";
   border-left: 2px solid rgba(0, 0, 0, .2);
   flex-grow: 1;
 
@@ -79,13 +79,13 @@ export const TeamList = styled.div`
     grid-template-areas:
     "img-1"
     "name-1"
-    "link-1"
+    "see-more-1"
     "img-2"
     "name-2"
-    "link-2"
+    "see-more-2"
     "img-3"
     "name-3"
-    "link-3"
+    "see-more-3"
   ;
 
     justify-content: center;
@@ -158,28 +158,29 @@ export const TeamList = styled.div`
     }
   }
 
-  .link {
+  .see-more {
     margin-top: 20px;
     color: ${({ theme }) => theme.colors.orange};
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     text-decoration-line: underline;
+    cursor: pointer;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
       margin-top: 8px;
     }
 
     &-1 {
-      grid-area: link-1;
+      grid-area: see-more-1;
     }
 
     &-2 {
-      grid-area: link-2;
+      grid-area: see-more-2;
     }
 
     &-3 {
-      grid-area: link-3;
+      grid-area: see-more-3;
     }
   }
 `

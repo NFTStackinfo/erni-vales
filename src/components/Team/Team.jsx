@@ -1,9 +1,21 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useState } from 'react'
 import { TeamItem, TeamList, TeamStyle } from './Team.style'
 import { Icon } from '../UIKit'
 import { teamList } from './data-team'
+import { ModalSeeMore } from './Modal/ModalSeeMore'
 
 export const Team = forwardRef(({}, ref) => {
+  const [isModalActive, setIsModalActive] = useState(false)
+  const [company, setCompany] = useState('')
+
+  const toggleModal = () => setIsModalActive(() => !isModalActive)
+
+  const seeMore = (company) => {
+    toggleModal()
+    setCompany(company)
+  }
+
+
   return (
     <TeamStyle ref={ref}>
       <div className="container">
@@ -18,20 +30,24 @@ export const Team = forwardRef(({}, ref) => {
           <TeamList>
             {
               teamList.map((item, idx) => (<>
-                <div className={`img-wrapper img-wrapper-${idx+1}`}>
+                <div className={`img-wrapper img-wrapper-${idx + 1}`}>
                   <img src={item.img} alt={item.name} />
                 </div>
 
-                <h3 className={`name name-${idx+1}`}>{item.name}</h3>
+                <h3 className={`name name-${idx + 1}`}>{item.name}</h3>
 
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`link link-${idx+1}`}
-                >
-                  SEE MORE
-                </a>
+                {item?.seeMore ? (
+                  <button
+                    className={`see-more see-more-${idx + 1}`}
+                    onClick={() => seeMore(item.seeMore)}
+                  >
+                    SEE MORE
+                  </button>
+                ) : <div  className={`see-more see-more-${idx + 1}`}/>}
+
+
+                <ModalSeeMore isActive={isModalActive} toggleModal={toggleModal}
+                              company={company} />
               </>))}
 
           </TeamList>
