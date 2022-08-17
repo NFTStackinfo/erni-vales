@@ -34,12 +34,8 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
     "exportedSymbols": {
-      "ERC165": [
-        2857
-      ],
-      "IERC165": [
-        2869
-      ]
+      "ERC165": [2857],
+      "IERC165": [2869]
     },
     "id": 2858,
     "license": "MIT",
@@ -47,12 +43,7 @@
     "nodes": [
       {
         "id": 2835,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:23:12"
       },
@@ -83,9 +74,7 @@
             "src": "688:7:12"
           }
         ],
-        "contractDependencies": [
-          2869
-        ],
+        "contractDependencies": [2869],
         "contractKind": "contract",
         "documentation": {
           "id": 2837,
@@ -95,17 +84,12 @@
         },
         "fullyImplemented": true,
         "id": 2857,
-        "linearizedBaseContracts": [
-          2857,
-          2869
-        ],
+        "linearizedBaseContracts": [2857, 2869],
         "name": "ERC165",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "baseFunctions": [
-              2868
-            ],
+            "baseFunctions": [2868],
             "body": {
               "id": 2855,
               "nodeType": "Block",
@@ -312,12 +296,8 @@
   "legacyAST": {
     "absolutePath": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
     "exportedSymbols": {
-      "ERC165": [
-        2857
-      ],
-      "IERC165": [
-        2869
-      ]
+      "ERC165": [2857],
+      "IERC165": [2869]
     },
     "id": 2858,
     "license": "MIT",
@@ -325,12 +305,7 @@
     "nodes": [
       {
         "id": 2835,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:23:12"
       },
@@ -361,9 +336,7 @@
             "src": "688:7:12"
           }
         ],
-        "contractDependencies": [
-          2869
-        ],
+        "contractDependencies": [2869],
         "contractKind": "contract",
         "documentation": {
           "id": 2837,
@@ -373,17 +346,12 @@
         },
         "fullyImplemented": true,
         "id": 2857,
-        "linearizedBaseContracts": [
-          2857,
-          2869
-        ],
+        "linearizedBaseContracts": [2857, 2869],
         "name": "ERC165",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "baseFunctions": [
-              2868
-            ],
+            "baseFunctions": [2868],
             "body": {
               "id": 2855,
               "nodeType": "Block",

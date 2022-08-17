@@ -1,14 +1,8 @@
-import * as React from "react";
-import IcomoonReact from "icomoon-react";
-import iconSet from "./selection.json";
+import * as React from "react"
+import IcomoonReact from "icomoon-react"
+import iconSet from "./selection.json"
 
-export const Icon = ({
-  color,
-  size = 44,
-  name,
-  className = "",
-  onClick,
-}) => {
+export const Icon = ({ color, size = 44, name, className = "", onClick }) => {
   return (
     <IcomoonReact
       onClick={onClick}
@@ -18,5 +12,5 @@ export const Icon = ({
       size={size}
       icon={name}
     />
-  );
-};
+  )
+}

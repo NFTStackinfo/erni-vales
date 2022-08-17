@@ -1,5 +1,5 @@
-import { createGlobalStyle, keyframes } from 'styled-components'
-import { generateSpaceClassNames } from '../../utils/utils'
+import { createGlobalStyle, keyframes } from "styled-components"
+import { generateSpaceClassNames } from "../../utils/utils"
 
 const fadeIn = keyframes`
   from {

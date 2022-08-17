@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const TeamStyle = styled.section`
   background-color: ${({ theme }) => theme.colors.darkWhite};
@@ -60,7 +60,7 @@ export const TeamList = styled.div`
     "img-1 img-2 img-3"
     "name-1 name-2 name-3"
     "see-more-1 see-more-2 see-more-3";
-  border-left: 2px solid rgba(0, 0, 0, .2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
   flex-grow: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
@@ -72,27 +72,28 @@ export const TeamList = styled.div`
     margin-left: 0;
     padding: 42px 24px 28px;
     border-left: none;
-    border-top: 2px solid rgba(0, 0, 0, .2);
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     grid-template-areas:
-    "img-1"
-    "name-1"
-    "see-more-1"
-    "img-2"
-    "name-2"
-    "see-more-2"
-    "img-3"
-    "name-3"
-    "see-more-3"
-  ;
+      "img-1"
+      "name-1"
+      "see-more-1"
+      "img-2"
+      "name-2"
+      "see-more-2"
+      "img-3"
+      "name-3"
+      "see-more-3";
 
     justify-content: center;
     padding-top: 60px;
   }
 
-  .img-wrapper, .name, .link {
+  .img-wrapper,
+  .name,
+  .link {
     justify-self: center;
   }
 

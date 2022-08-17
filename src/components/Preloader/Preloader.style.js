@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const LoaderStyle = styled.div`
   position: fixed;
@@ -58,4 +58,4 @@ export const LoaderStyle = styled.div`
   .progress {
     width: 280px;
   }
-`;
+`

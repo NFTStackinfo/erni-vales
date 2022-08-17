@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const FooterStyle = styled.footer`
   text-align: center;
@@ -35,7 +35,7 @@ export const FooterStyle = styled.footer`
     justify-content: flex-end;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-        margin-top: 12px;
+      margin-top: 12px;
     }
 
     li {

@@ -1,6 +1,6 @@
 export const roadmapData = [
   {
-    title: 'Tag-to-Earn',
+    title: "Tag-to-Earn",
     content: (
       <>
         <p>
@@ -8,22 +8,20 @@ export const roadmapData = [
           metaverse.
         </p>
       </>
-    )
+    ),
   },
 
   {
-    title: 'ErniCoin',
+    title: "ErniCoin",
     content: (
       <>
-        <p>
-          Reward tokens earned each time you tag property in the metaverse.
-        </p>
+        <p>Reward tokens earned each time you tag property in the metaverse.</p>
       </>
-    )
+    ),
   },
 
   {
-    title: 'Art',
+    title: "Art",
     content: (
       <>
         <p>
@@ -31,11 +29,11 @@ export const roadmapData = [
           Erni Vales shipped and air dropped to lucky hodlers.
         </p>
       </>
-    )
+    ),
   },
 
   {
-    title: 'Merch',
+    title: "Merch",
     content: (
       <>
         <p>
@@ -43,11 +41,11 @@ export const roadmapData = [
           edition hoodies, hats and more.
         </p>
       </>
-    )
+    ),
   },
 
   {
-    title: 'Event Access',
+    title: "Event Access",
     content: (
       <>
         <p>
@@ -55,6 +53,6 @@ export const roadmapData = [
           edition hoodies, hats and more.
         </p>
       </>
-    )
-  }
+    ),
+  },
 ]

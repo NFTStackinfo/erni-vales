@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const JoinTheCommunityStyle = styled.section`
   background-color: ${({ theme }) => theme.colors.orange};
@@ -113,7 +113,6 @@ export const ImageCarousel = styled.div`
             content: none;
           }
         }
-
       }
     }
   }

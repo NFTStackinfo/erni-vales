@@ -1,34 +1,34 @@
-import { useEffect, useState } from "react";
-import { HeaderStyle } from "./Header.style";
-import { Icon } from "../UIKit";
-import { useLockedBody } from "../../hooks/useLockedBody";
-import { navList, socialList } from "./dataHeader";
+import { useEffect, useState } from "react"
+import { HeaderStyle } from "./Header.style"
+import { Icon } from "../UIKit"
+import { useLockedBody } from "../../hooks/useLockedBody"
+import { navList, socialList } from "./dataHeader"
 
 const Header = ({ onLinkClick }) => {
-  const [drawerOpened, setDrawerOpened] = useState(false);
-  const [locked, setLocked] = useLockedBody();
+  const [drawerOpened, setDrawerOpened] = useState(false)
+  const [locked, setLocked] = useLockedBody()
 
   useEffect(() => {
     if (drawerOpened) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("overflow-hidden")
     }
     return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [drawerOpened]);
+      document.body.classList.remove("overflow-hidden")
+    }
+  }, [drawerOpened])
 
   const handleDrawerToggle = () => {
-    setDrawerOpened(!drawerOpened);
-    setLocked(!locked);
-  };
+    setDrawerOpened(!drawerOpened)
+    setLocked(!locked)
+  }
 
-  const handleMenuLinkClick = (to) => {
+  const handleMenuLinkClick = to => {
     if (drawerOpened) {
-      setDrawerOpened(false);
-      setLocked(false);
+      setDrawerOpened(false)
+      setLocked(false)
     }
-    onLinkClick(to);
-  };
+    onLinkClick(to)
+  }
   return (
     <HeaderStyle className={drawerOpened ? "open" : ""}>
       <div className="container">
@@ -48,28 +48,26 @@ const Header = ({ onLinkClick }) => {
                     <li key={to} onClick={() => handleMenuLinkClick(to)}>
                       {title}
                     </li>
-                  );
+                  )
                 })}
               </ul>
             </div>
           </nav>
           <ul className="social">
-              {
-                  socialList.map(({name, url}) => {
-                      return (
-                          <li key={name}>
-                              <a
-                                  target="_blank"
-                                  href={url}
-                                  rel="noreferrer"
-                                  className="social-btn"
-                              >
-                                  <Icon name={name} />
-                              </a>
-                          </li>
-                      )
-                  })
-              }
+            {socialList.map(({ name, url }) => {
+              return (
+                <li key={name}>
+                  <a
+                    target="_blank"
+                    href={url}
+                    rel="noreferrer"
+                    className="social-btn"
+                  >
+                    <Icon name={name} />
+                  </a>
+                </li>
+              )
+            })}
           </ul>
           <button
             className="hamburger"
@@ -81,7 +79,7 @@ const Header = ({ onLinkClick }) => {
         </div>
       </div>
     </HeaderStyle>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

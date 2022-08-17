@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const HeaderStyle = styled.header`
   position: fixed;
@@ -6,7 +6,7 @@ export const HeaderStyle = styled.header`
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: ${({theme}) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.white};
 
   .hamburger {
     display: none;
@@ -219,4 +219,4 @@ export const HeaderStyle = styled.header`
       }
     }
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const FAQStyle = styled.section`
   margin-top: 12px;
@@ -18,7 +18,6 @@ export const FAQStyle = styled.section`
       padding-bottom: 40px;
     }
   }
-
 
   .content {
     display: flex;
@@ -75,7 +74,6 @@ export const QuestionsContainer = styled.div`
     :first-child {
       padding-bottom: 20px;
 
-
       @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
         padding-top: 16px;
       }
@@ -86,7 +84,6 @@ export const QuestionsContainer = styled.div`
     display: block;
 
     &.is-open {
-
       & + .Collapsible__contentOuter {
       }
     }

@@ -1,7 +1,7 @@
-import { HeroStyle } from "./Hero.style";
-import { Button } from "../UIKit";
-import React, { forwardRef } from "react";
-import ConnectButton from '../ConnectButton/ConnectButton'
+import { HeroStyle } from "./Hero.style"
+import { Button } from "../UIKit"
+import React, { forwardRef } from "react"
+import ConnectButton from "../ConnectButton/ConnectButton"
 
 const Hero = forwardRef(({ loading }, ref) => {
   return (
@@ -12,7 +12,7 @@ const Hero = forwardRef(({ loading }, ref) => {
             <img src={`/assets/hero/hero.jpg`} alt="" />
           </div>
 
-          <div className='mint-container'>
+          <div className="mint-container">
             <ConnectButton />
           </div>
 
@@ -29,7 +29,7 @@ const Hero = forwardRef(({ loading }, ref) => {
         </div>
       </div>
     </HeroStyle>
-  );
-});
+  )
+})
 
-export default Hero;
+export default Hero

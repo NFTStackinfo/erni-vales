@@ -1,11 +1,11 @@
-import React from 'react'
-import Slider from "react-slick";
+import React from "react"
+import Slider from "react-slick"
 import {
   ImageCarousel,
   JoinTheCommunityStyle,
-  TextContent
-} from './JoinTheCommunity.style'
-import { Carousel } from '../UIKit'
+  TextContent,
+} from "./JoinTheCommunity.style"
+import { Carousel } from "../UIKit"
 
 export const JoinTheCommunity = () => {
   const settings = {
@@ -16,7 +16,7 @@ export const JoinTheCommunity = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-  };
+  }
 
   return (
     <JoinTheCommunityStyle>
@@ -24,9 +24,24 @@ export const JoinTheCommunity = () => {
         <div className="content">
           <ImageCarousel>
             <Carousel settings={settings}>
-              <div><img src="/assets/join-the-community/slider-1.png" alt="Erni and Frens" /></div>
-              <div><img src="/assets/join-the-community/slider-2.png" alt="Erni and Frens" /></div>
-              <div><img src="/assets/join-the-community/slider-3.png" alt="Erni and Frens" /></div>
+              <div>
+                <img
+                  src="/assets/join-the-community/slider-1.png"
+                  alt="Erni and Frens"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/join-the-community/slider-2.png"
+                  alt="Erni and Frens"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/join-the-community/slider-3.png"
+                  alt="Erni and Frens"
+                />
+              </div>
             </Carousel>
           </ImageCarousel>
 
@@ -42,9 +57,7 @@ export const JoinTheCommunity = () => {
               access pass to a universe of gamified utility.
             </p>
 
-            <a href="#">
-              Let's join
-            </a>
+            <a href="#">Let's join</a>
           </TextContent>
         </div>
       </div>

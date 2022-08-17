@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react"
 
 const data = [
   {
-    question: 'What is Tag-to-Earn?',
+    question: "What is Tag-to-Earn?",
     answer: (
       <>
         <p>
@@ -11,10 +11,10 @@ const data = [
           musical career of Roger Sanches.
         </p>
       </>
-    )
+    ),
   },
   {
-    question: 'What is Tag-to-Earn?',
+    question: "What is Tag-to-Earn?",
     answer: (
       <>
         <p>
@@ -23,10 +23,10 @@ const data = [
           musical career of Roger Sanches.
         </p>
       </>
-    )
+    ),
   },
   {
-    question: 'Why NFTs?',
+    question: "Why NFTs?",
     answer: (
       <>
         <p>
@@ -35,11 +35,10 @@ const data = [
           musical career of Roger Sanches.
         </p>
       </>
-    )
+    ),
   },
   {
-    question:
-      'Wen is the mint?',
+    question: "Wen is the mint?",
     answer: (
       <>
         <p>
@@ -48,11 +47,10 @@ const data = [
           musical career of Roger Sanches.
         </p>
       </>
-    )
+    ),
   },
   {
-    question:
-      'How is this project special?',
+    question: "How is this project special?",
     answer: (
       <>
         <p>
@@ -61,8 +59,8 @@ const data = [
           musical career of Roger Sanches.
         </p>
       </>
-    )
-  }
+    ),
+  },
 ]
 
 export default data

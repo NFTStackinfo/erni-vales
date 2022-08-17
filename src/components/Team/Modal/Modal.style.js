@@ -1,9 +1,13 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const ModalStyle = styled.div`
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
   overflow: auto;
   justify-content: center;
   align-items: center;
@@ -19,7 +23,7 @@ export const ModalStyle = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-      align-items: flex-end;
+    align-items: flex-end;
   }
 
   @keyframes modal-entering {
@@ -213,7 +217,7 @@ export const ModalText = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-        //padding-bottom: 32px;
+      //padding-bottom: 32px;
       padding-bottom: 12px;
     }
   }

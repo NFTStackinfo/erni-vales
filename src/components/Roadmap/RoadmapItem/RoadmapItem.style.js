@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const RoadmapItemStyle = styled.div`
   display: flex;
@@ -17,8 +17,6 @@ export const RoadmapItemStyle = styled.div`
     //margin-bottom: 8px;
 
     .progress {
-
-
       &__bar {
         height: 86px;
         border-radius: 30px 30px 0 0;
@@ -37,12 +35,11 @@ export const RoadmapItemStyle = styled.div`
   }
 
   &.last {
-
     .content {
       padding-bottom: 12px;
 
       @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-          padding-bottom: 0;
+        padding-bottom: 0;
       }
     }
 
@@ -95,7 +92,7 @@ export const RoadmapItemStyle = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-        padding-bottom: 76px;
+      padding-bottom: 76px;
     }
 
     > h4 {

@@ -1,18 +1,16 @@
-import { useEffect, useState, useRef } from "react";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Footer from "./components/Footer/Footer";
-import Roadmap from "./components/Roadmap/Roadmap";
-import { Team } from "./components/Team/Team";
-import FAQ from "./components/FAQ/FAQ";
+import { useEffect, useState, useRef } from "react"
+import Header from "./components/Header/Header"
+import Hero from "./components/Hero/Hero"
+import Footer from "./components/Footer/Footer"
+import Roadmap from "./components/Roadmap/Roadmap"
+import { Team } from "./components/Team/Team"
+import FAQ from "./components/FAQ/FAQ"
 // import Preloader from "./components/Preloader/Preloader";
-import Preloader from "./components/Preloader/PreloaderDynamic";
-import { useLockedBody } from "./hooks/useLockedBody";
-import About from "./components/About/About";
-import {
-  JoinTheCommunity
-} from './components/JoinTheCommunity/JoinTheCommunity'
-const scrollIntoView = require("scroll-into-view");
+import Preloader from "./components/Preloader/PreloaderDynamic"
+import { useLockedBody } from "./hooks/useLockedBody"
+import About from "./components/About/About"
+import { JoinTheCommunity } from "./components/JoinTheCommunity/JoinTheCommunity"
+const scrollIntoView = require("scroll-into-view")
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -21,9 +19,9 @@ function App() {
   // const heroRef = useRef(null);
   // const aboutRef = useRef(null);
   // const utilitiesRef = useRef(null);
-  const roadmapRef = useRef(null);
-  const teamRef = useRef(null);
-  const faqRef = useRef(null);
+  const roadmapRef = useRef(null)
+  const teamRef = useRef(null)
+  const faqRef = useRef(null)
   //
   // useEffect(() => {
   //   window.history.scrollRestoration = "manual";
@@ -69,7 +67,7 @@ function App() {
 
   return (
     <main>
-        {/*for static preloader*/}
+      {/*for static preloader*/}
       {/*<Preloader className={loading ? "" : "hide-loader"} />*/}
       {/*  for dynamic preloader*/}
       {/*<Preloader onLoad={handleLoad} />*/}
@@ -84,7 +82,7 @@ function App() {
         <Footer />
       </div>
     </main>
-  );
+  )
 }
 
-export default App;
+export default App

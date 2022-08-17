@@ -8,7 +8,7 @@ export const Modal = ({ isActive, children }) => {
   const [, setLocked] = useLockedBody()
 
   useEffect(() => {
-    console.log('isActive', isActive)
+    console.log("isActive", isActive)
     setLocked(isActive)
   }, [isActive])
 
@@ -18,11 +18,10 @@ export const Modal = ({ isActive, children }) => {
         {state => (
           <ModalStyle
             className={["modal", isActive ? "active" : "", state].join(" ")}
-            data-overlay>
+            data-overlay
+          >
             <ModalContainer>
-              <ModalContent>
-                {children}
-              </ModalContent>
+              <ModalContent>{children}</ModalContent>
             </ModalContainer>
           </ModalStyle>
         )}
