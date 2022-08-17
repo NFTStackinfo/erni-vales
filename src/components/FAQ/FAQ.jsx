@@ -17,12 +17,12 @@ const FAQ = forwardRef((props, ref) => {
     }
   }
   return (
-    <FAQStyle ref={ref}>
+    <FAQStyle>
       <FAQTopImg>
         <img src="/assets/FAQ/FAQ-top.jpg" alt="Enri vales's" />
       </FAQTopImg>
 
-      <div className="wrapper">
+      <div className="wrapper" ref={ref}>
         <div className="container">
           <div className="content">
             <div className="title">

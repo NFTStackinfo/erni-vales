@@ -4,101 +4,115 @@
     {
       "icon": {
         "paths": [
-          "M227.424 182.176c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248l284.576 284.576-284.576 284.576c-12.512 12.48-12.512 32.768 0 45.248s32.768 12.48 45.248 0l284.576-284.576 284.576 284.576c12.48 12.48 32.768 12.48 45.248 0s12.512-32.768 0-45.248l-284.576-284.576 284.576-284.576c12.512-12.512 12.512-32.768 0-45.248s-32.768-12.512-45.248 0l-284.576 284.576-284.576-284.576z"
+          "M218.24 275.188l293.76 292.723 293.76-292.723 90.24 90.118-384 383.482-384-383.482 90.24-90.118z"
         ],
-        "attrs": [{}],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
-        "tags": ["close"],
-        "colorPermutations": { "12552552551": [{}] }
+        "tags": [
+          "arrow-down"
+        ],
+        "colorPermutations": {
+          "12552552551": [
+            {
+              "f": 1
+            }
+          ]
+        }
       },
-      "attrs": [{}],
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
       "properties": {
-        "order": 56,
+        "order": 17,
+        "id": 9,
+        "name": "arrow-down",
+        "prevSize": 32,
+        "code": 59649
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M218.24 748.787l293.76-292.723 293.76 292.723 90.24-90.118-384-383.481-384 383.481 90.24 90.118z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "arrow-up"
+        ],
+        "colorPermutations": {
+          "12552552551": [
+            {
+              "f": 1
+            }
+          ]
+        }
+      },
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 18,
         "id": 8,
+        "name": "arrow-up",
+        "prevSize": 32,
+        "code": 59650
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M227.424 182.176c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248l284.576 284.576-284.576 284.576c-12.512 12.48-12.512 32.768 0 45.248s32.768 12.48 45.248 0l284.576-284.576 284.576 284.576c12.48 12.48 32.768 12.48 45.248 0s12.512-32.768 0-45.248l-284.576-284.576 284.576-284.576c12.512-12.512 12.512-32.768 0-45.248s-32.768-12.512-45.248 0l-284.576 284.576-284.576-284.576z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "colorPermutations": {
+          "12552552551": [
+            {}
+          ]
+        },
+        "tags": [
+          "close"
+        ],
+        "grid": 0
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 19,
+        "id": 0,
         "name": "close",
         "prevSize": 32,
         "code": 59648
       },
       "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 0
-    },
-    {
-      "icon": {
-        "paths": ["M232.727 651.636l279.273-279.273 279.273 279.273"],
-        "attrs": [
-          {
-            "fill": "none",
-            "strokeLinejoin": "round",
-            "strokeLinecap": "round",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 93.0909090909091
-          }
-        ],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "colorPermutations": { "12552552551": [{}] },
-        "tags": ["arrow-up"],
-        "grid": 0
-      },
-      "attrs": [
-        {
-          "fill": "none",
-          "strokeLinejoin": "round",
-          "strokeLinecap": "round",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 93.0909090909091
-        }
-      ],
-      "properties": {
-        "order": 7,
-        "id": 1,
-        "name": "arrow-up",
-        "prevSize": 32,
-        "code": 59649
-      },
-      "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 1
-    },
-    {
-      "icon": {
-        "paths": ["M791.273 372.364l-279.273 279.273-279.273-279.273"],
-        "attrs": [
-          {
-            "fill": "none",
-            "strokeLinejoin": "round",
-            "strokeLinecap": "round",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 93.0909090909091
-          }
-        ],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "colorPermutations": { "12552552551": [{}] },
-        "tags": ["arrow-down"],
-        "grid": 0
-      },
-      "attrs": [
-        {
-          "fill": "none",
-          "strokeLinejoin": "round",
-          "strokeLinecap": "round",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 93.0909090909091
-        }
-      ],
-      "properties": {
-        "order": 8,
-        "id": 2,
-        "name": "arrow-down",
-        "prevSize": 32,
-        "code": 59650
-      },
-      "setIdx": 0,
-      "setId": 2,
+      "setId": 3,
       "iconIdx": 2
     },
     {
@@ -107,24 +121,52 @@
           "M512 1024c282.77 0 512-229.23 512-512s-229.23-512-512-512c-282.77 0-512 229.23-512 512s229.23 512 512 512z",
           "M682.667 474.074h37.926v75.852h-37.926v-75.852zM348.139 549.926c-20.946 0-37.926-16.979-37.926-37.926s16.979-37.926 37.926-37.926v75.852zM494.294 618.697l26.042 27.57-55.141 52.087-26.042-27.57 55.141-52.087zM341.333 512l-27.57 26.044c-13.807-14.617-13.807-37.471 0-52.087l27.57 26.044zM439.154 353.216l26.042-27.57 55.141 52.087-26.042 27.57-55.141-52.087zM682.667 549.926h-334.528v-75.852h334.528v75.852zM439.154 670.784l-125.391-132.741 55.141-52.087 125.391 132.741-55.141 52.087zM313.763 485.956l125.391-132.741 55.141 52.087-125.391 132.741-55.141-52.087z"
         ],
-        "attrs": [{ "fill": "rgb(255, 255, 255)" }, { "fill": "rgb(0, 0, 0)" }],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          },
+          {
+            "fill": "rgb(0, 0, 0)"
+          }
+        ],
         "isMulticolor": true,
         "isMulticolor2": false,
-        "colorPermutations": { "12552552551": [{ "f": 1 }, { "f": 0 }] },
-        "tags": ["arrow-back"],
+        "colorPermutations": {
+          "12552552551": [
+            {
+              "f": 1
+            },
+            {
+              "f": 0
+            }
+          ]
+        },
+        "tags": [
+          "arrow-back"
+        ],
         "grid": 0
       },
-      "attrs": [{ "fill": "rgb(255, 255, 255)" }, { "fill": "rgb(0, 0, 0)" }],
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        },
+        {
+          "fill": "rgb(0, 0, 0)"
+        }
+      ],
       "properties": {
-        "order": 9,
+        "order": 20,
         "id": 3,
         "name": "arrow-back",
         "prevSize": 32,
         "code": 59651,
-        "codes": [59651, 59652]
+        "codes": [
+          59651,
+          59652
+        ]
       },
       "setIdx": 0,
-      "setId": 2,
+      "setId": 3,
       "iconIdx": 3
     },
     {
@@ -133,24 +175,52 @@
           "M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512c282.77 0 512-229.23 512-512s-229.23-512-512-512z",
           "M341.333 549.926h-37.926v-75.852h37.926v75.852zM675.861 474.074c20.946 0 37.926 16.979 37.926 37.926s-16.979 37.926-37.926 37.926v-75.852zM529.706 405.303l-26.042-27.57 55.141-52.087 26.042 27.57-55.141 52.087zM682.667 512l27.57-26.044c13.807 14.617 13.807 37.471 0 52.087l-27.57-26.044zM584.846 670.784l-26.042 27.57-55.141-52.087 26.042-27.57 55.141 52.087zM341.333 474.074h334.528v75.852h-334.528v-75.852zM584.846 353.216l125.391 132.741-55.141 52.087-125.391-132.741 55.141-52.087zM710.237 538.044l-125.391 132.741-55.141-52.087 125.391-132.741 55.141 52.087z"
         ],
-        "attrs": [{ "fill": "rgb(255, 255, 255)" }, { "fill": "rgb(0, 0, 0)" }],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          },
+          {
+            "fill": "rgb(0, 0, 0)"
+          }
+        ],
         "isMulticolor": true,
         "isMulticolor2": false,
-        "colorPermutations": { "12552552551": [{ "f": 1 }, { "f": 0 }] },
-        "tags": ["arrow-next"],
+        "colorPermutations": {
+          "12552552551": [
+            {
+              "f": 1
+            },
+            {
+              "f": 0
+            }
+          ]
+        },
+        "tags": [
+          "arrow-next"
+        ],
         "grid": 0
       },
-      "attrs": [{ "fill": "rgb(255, 255, 255)" }, { "fill": "rgb(0, 0, 0)" }],
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        },
+        {
+          "fill": "rgb(0, 0, 0)"
+        }
+      ],
       "properties": {
-        "order": 10,
+        "order": 21,
         "id": 4,
         "name": "arrow-next",
         "prevSize": 32,
         "code": 59653,
-        "codes": [59653, 59654]
+        "codes": [
+          59653,
+          59654
+        ]
       },
       "setIdx": 0,
-      "setId": 2,
+      "setId": 3,
       "iconIdx": 4
     },
     {
@@ -161,20 +231,24 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": { "12552552551": [] },
-        "tags": ["discord"],
+        "colorPermutations": {
+          "12552552551": []
+        },
+        "tags": [
+          "discord"
+        ],
         "grid": 0
       },
       "attrs": [],
       "properties": {
-        "order": 12,
-        "id": 6,
+        "order": 22,
+        "id": 5,
         "name": "discord",
         "prevSize": 32,
         "code": 59656
       },
       "setIdx": 0,
-      "setId": 2,
+      "setId": 3,
       "iconIdx": 5
     },
     {
@@ -185,20 +259,24 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": { "12552552551": [] },
-        "tags": ["twitter"],
+        "colorPermutations": {
+          "12552552551": []
+        },
+        "tags": [
+          "twitter"
+        ],
         "grid": 0
       },
       "attrs": [],
       "properties": {
-        "order": 13,
-        "id": 7,
+        "order": 23,
+        "id": 6,
         "name": "twitter",
         "prevSize": 32,
         "code": 59657
       },
       "setIdx": 0,
-      "setId": 2,
+      "setId": 3,
       "iconIdx": 6
     },
     {
@@ -208,27 +286,39 @@
           "M855.466 682.672h-686.932c-22.386 0-40.533 18.147-40.533 40.534v4.266c0 22.387 18.148 40.534 40.533 40.534h686.932c22.387 0 40.534-18.147 40.534-40.534v-4.266c0-22.387-18.147-40.534-40.534-40.534z",
           "M855.466 256h-686.932c-22.386 0-40.533 18.148-40.533 40.533v4.267c0 22.387 18.148 40.534 40.533 40.534h686.932c22.387 0 40.534-18.147 40.534-40.534v-4.267c0-22.386-18.147-40.533-40.534-40.533z"
         ],
-        "attrs": [{}, {}, {}],
+        "attrs": [
+          {},
+          {},
+          {}
+        ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": ["menu"],
+        "tags": [
+          "menu"
+        ],
         "grid": 0
       },
-      "attrs": [{}, {}, {}],
+      "attrs": [
+        {},
+        {},
+        {}
+      ],
       "properties": {
-        "order": 57,
-        "id": 5,
+        "order": 24,
+        "id": 7,
         "name": "menu",
         "prevSize": 32,
         "code": 59655
       },
-      "setIdx": 1,
-      "setId": 1,
+      "setIdx": 0,
+      "setId": 3,
       "iconIdx": 7
     }
   ],
   "height": 1024,
-  "metadata": { "name": "icomoon" },
+  "metadata": {
+    "name": "icomoon"
+  },
   "preferences": {
     "showGlyphs": true,
     "showCodes": true,
@@ -237,8 +327,14 @@
     "showSVGs": true,
     "fontPref": {
       "prefix": "icon-",
-      "metadata": { "fontFamily": "icomoon" },
-      "metrics": { "emSize": 1024, "baseline": 6.25, "whitespace": 50 },
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
       "embed": false
     },
     "imagePref": {
