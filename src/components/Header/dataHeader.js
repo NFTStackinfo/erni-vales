@@ -8,7 +8,7 @@ export const navList = [
     to: "#bio",
   },
   {
-    title: "ROADMAP",
+    title: "Roadmap",
     to: "#roadmap",
   },
   {
@@ -16,7 +16,7 @@ export const navList = [
     to: "#faq",
   },
   {
-    title: "TEAM",
+    title: "Team",
     to: "#team",
   },
   {
