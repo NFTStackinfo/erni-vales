@@ -110,6 +110,7 @@ export const SliderWrapper = styled.div`
     position: absolute;
     display: block;
     padding: 0;
+    z-index: 1;
   }
 
   .slick-dots li button:before,
@@ -140,8 +141,8 @@ export const SliderWrapper = styled.div`
     font-size: 0;
     line-height: 0;
     top: 50%;
-    width: 20px;
-    height: 20px;
+    width: 54px;
+    height: 54px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -182,11 +183,11 @@ export const SliderWrapper = styled.div`
   }
 
   .slick-prev {
-    left: -25px;
+    left: -75px;
   }
 
   [dir="rtl"] .slick-prev {
-    right: -25px;
+    right: -75px;
     left: auto;
   }
 
@@ -200,12 +201,12 @@ export const SliderWrapper = styled.div`
   }
 
   .slick-next {
-    right: -25px;
+    right: -75px;
   }
 
   [dir="rtl"] .slick-next {
     right: auto;
-    left: -25px;
+    left: -75px;
   }
 
   [dir="rtl"] .slick-next:before {

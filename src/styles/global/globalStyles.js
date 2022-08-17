@@ -114,12 +114,13 @@ export const GlobalStyle = createGlobalStyle`
 
   /*global*/
   body {
-    font-family: ${({ theme }) => theme.font.primary};
+    font-family: ${({ theme }) => theme.font.secondary};
     font-size: ${({ theme }) => theme.font.size.p1.base};
     color: ${({ theme }) => theme.colors.lightText};
     font-weight: 400;
     line-height: 1.15;
     background: ${({ theme }) => theme.colors.white};
+    overflow-x: hidden;
   }
 
   .container {
@@ -134,7 +135,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .main-wrapper {
-    padding-top: 72px;
+    //padding-top: 72px;
   }
 
   /*typography*/
@@ -143,20 +144,20 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.1;
     font-family: ${({ theme }) => theme.font.primary};
     color: ${({ theme }) => theme.colors.black};
-    text-transform: uppercase;
     font-weight: 900;
   }
 
   h1, .text-h1, h2, .text-h2 {
     font-size: ${({ theme }) => theme.font.size.h1.base};
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: ${({ theme }) => theme.font.size.h1.lg};
+    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
       font-size: ${({ theme }) => theme.font.size.h1.sm};
     }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
-      font-size: ${({ theme }) => theme.font.size.h1.lg};
-    }
+
   }
 
   .text-p1 {

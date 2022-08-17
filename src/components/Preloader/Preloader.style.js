@@ -10,7 +10,9 @@ export const LoaderStyle = styled.div`
   visibility: visible;
   opacity: 1;
   transition: .5s;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
+  background: url('/assets/preloader/gradient.png') no-repeat center center, #fff;
+  background-size: cover;
+
   font-family: ${({ theme }) => theme.font.secondary};
   &.hide-loader {
     opacity: 0;
@@ -19,6 +21,10 @@ export const LoaderStyle = styled.div`
 
   .content {
     text-align: center;
+
+    img {
+      max-width: 130px;
+    }
   }
 
 
@@ -26,36 +32,48 @@ export const LoaderStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: 22px;
 
     p {
-      font-size: ${({ theme }) => theme.font.size.subheading2};
+      font-size: 36px;
       width: 64px;
       text-align: center;
     }
   }
   .progress {
-    width: 370px;
-    height: 9px;
-    margin-top: 24px;
+    width: 400px;
+    height: 18px;
+    margin-top: 37px;
     border-radius: 100px;
     background-color: ${({ theme }) => theme.colors.white};
+    border: 2px solid ${({ theme }) => theme.colors.black};
 
 
     .progress-inner {
-      background-color: ${({ theme }) => theme.colors.darkText};
+      background-color: ${({ theme }) => theme.colors.black};
       border-radius: 50px;
       height: 100%;
       transition: .3s;
 
       &.box-shadow {
-        box-shadow: 0 0 0 1px ${({ theme }) => theme.colors.darkText};
+        box-shadow: 0 0 0 1px ${({ theme }) => theme.colors.black};
       }
     }
   }
 }
+@media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
+  background-image: url('/assets/preloader/gradient1200.png');
+}
+@media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+  background-image: url('/assets/preloader/gradient992.png');
+}
 @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+  background-image: url('/assets/preloader/gradient576.png');
+}
+@media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+  background-image: url('/assets/preloader/gradient360.png');
   .progress {
-    width: 280px;
+    width: 306px;
   }
+}
 `;

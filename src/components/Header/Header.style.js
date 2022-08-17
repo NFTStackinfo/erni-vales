@@ -6,7 +6,12 @@ export const HeaderStyle = styled.header`
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: ${({theme}) => theme.colors.white};
+  transition: .2s;
+
+  &.sticky {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+  }
 
   .hamburger {
     display: none;
@@ -17,11 +22,10 @@ export const HeaderStyle = styled.header`
     align-items: center;
     justify-content: space-between;
     height: 72px;
-    padding: 0 40px;
   }
 
   .logo {
-    max-width: 167px;
+    max-width: 135px;
     margin-right: 24px;
     display: block;
     cursor: pointer;
@@ -32,13 +36,12 @@ export const HeaderStyle = styled.header`
     }
   }
 
-  .logo-wrapper,
-  .social {
-    flex: 1;
-  }
 
   .header-nav {
-    flex: 2;
+
+    .nav-bg {
+      display: none;
+    }
 
     .header-nav-inner {
       display: flex;
@@ -52,7 +55,7 @@ export const HeaderStyle = styled.header`
       > li {
         cursor: pointer;
         line-height: 1;
-        font-size: ${({ theme }) => theme.font.size.subheading2};
+        font-size: 16px;
         position: relative;
         font-family: ${({ theme }) => theme.font.secondary};
         color: ${({ theme }) => theme.colors.black};
@@ -78,7 +81,7 @@ export const HeaderStyle = styled.header`
         }
 
         &:not(:last-child) {
-          margin-right: 24px;
+          margin-right: 54px;
         }
       }
     }
@@ -91,48 +94,19 @@ export const HeaderStyle = styled.header`
     }
   }
 
-  .social {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    li {
-      margin-left: 8px;
-
-      a {
-        background-color: ${({ theme }) => theme.colors.black};
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s;
-        border: 2px solid ${({ theme }) => theme.colors.white};
-
-        .icon {
-          path {
-            transition: 0.3s;
-          }
-        }
-
-        &:hover {
-          background-color: ${({ theme }) => theme.colors.white};
-          color: ${({ theme }) => theme.colors.white};
-
-          .icon {
-            path {
-              fill: ${({ theme }) => theme.colors.black} !important;
-            }
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    .header-nav {
+      .header-nav-list {
+        > li {
+          &:not(:last-child) {
+            margin-right: 40px;
           }
         }
       }
     }
   }
-
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     height: auto;
-    background-color: ${({ theme }) => theme.colors.black};
 
     .header-content {
       padding: 0;
@@ -144,19 +118,18 @@ export const HeaderStyle = styled.header`
       cursor: pointer;
       height: 40px;
       width: 40px;
-      border-radius: 50%;
-      background-color: ${({ theme }) => theme.colors.black};
       transition: 0.3s;
-      border: 2px solid ${({ theme }) => theme.colors.white};
     }
 
     &.open {
+      height: 100vh;
+      background: url("assets/header/bg.png") no-repeat right center;
+      background-size: cover;
+
       .header-nav {
         height: calc(100% - 72px);
+
       }
-    }
-    .social {
-      margin-left: auto;
     }
 
     .header-nav {
@@ -166,10 +139,9 @@ export const HeaderStyle = styled.header`
       bottom: 0;
       left: 0;
       overflow-y: auto;
+      overflow-x: hidden;
       z-index: 100;
       height: 0;
-      transition: height 0.5s;
-      background-color: ${({ theme }) => theme.colors.white};
 
       .header-nav-inner {
         flex-direction: column;
@@ -185,9 +157,10 @@ export const HeaderStyle = styled.header`
         align-items: flex-start;
 
         > li {
-          margin-right: 0;
-          font-size: ${({ theme }) => theme.font.size.h2};
+          margin-right: 0 !important;
+          font-size: 32px;
           width: 100%;
+          letter-spacing: -1px;
           color: ${({ theme }) => theme.colors.darkText};
 
           &:not(:first-child) {
@@ -198,23 +171,33 @@ export const HeaderStyle = styled.header`
           }
         }
       }
-
-      .copyright {
-        display: block;
-        text-align: center;
-        padding: 24px 20px;
-        font-size: ${({ theme }) => theme.font.size.subheading2};
-      }
     }
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    &.open {
+      background-image: url("assets/header/bg576.png");
+    }
     .header-nav {
       .header-nav-list {
         > li {
           &:not(:first-child) {
-            margin-top: 24px;
+            margin-top: 45px;
           }
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    &.open {
+      background-image: url("assets/header/bg360.png");
+    }
+    .header-nav {
+      .header-nav-list {
+        > li {
+          font-size: 30px;
         }
       }
     }

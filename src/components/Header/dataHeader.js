@@ -1,23 +1,27 @@
 export const navList = [
   {
-    title: "ABOUT",
+    title: "About",
     to: "#about",
   },
   {
-    title: "UTILITIES",
-    to: "#utilities",
+    title: "Erni’s Bio",
+    to: "#bio",
   },
   {
     title: "ROADMAP",
     to: "#roadmap",
   },
   {
+    title: "FAQ",
+    to: "#faq",
+  },
+  {
     title: "TEAM",
     to: "#team",
   },
   {
-    title: "FAQ",
-    to: "#faq",
+    title: "Join The Community",
+    to: "#community",
   },
 ];
 

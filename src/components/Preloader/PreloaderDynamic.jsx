@@ -45,7 +45,7 @@ const Preloader = ({ onLoad, className }) => {
     return loaded ? null : (
         <LoaderStyle className={className}>
             <div className="content">
-                <img src="logo.svg" alt="Logo" />
+                <img src="/logo.svg" alt="Logo" />
                 <div className="progress">
                     <div
                         className={`progress-inner ${count > 5 ? "box-shadow" : ""}`}
@@ -58,6 +58,23 @@ const Preloader = ({ onLoad, className }) => {
             </div>
         </LoaderStyle>
     );
+
+  // return (
+  //   <LoaderStyle className={className}>
+  //     <div className="content">
+  //       <img src="assets/team/team-1.svg" alt="Logo" />
+  //       <div className="progress">
+  //         <div
+  //           className={`progress-inner ${count > 5 ? "box-shadow" : ""}`}
+  //           style={{ width: `${count}%` }}
+  //         />
+  //       </div>
+  //       <div className="percent">
+  //         <p>{count.toFixed()}%</p>
+  //       </div>
+  //     </div>
+  //   </LoaderStyle>
+  // )
 }
 
 export default Preloader;
