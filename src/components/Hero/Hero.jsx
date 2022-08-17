@@ -30,7 +30,7 @@ const Hero = forwardRef(({ children, loaded }, ref) => {
                 className="discord"
                 href="#"
               >
-                JOIN DISCORD
+                JOIN DISCOR
               </Button>
             </div>
           </div>
