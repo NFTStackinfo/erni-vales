@@ -1,4 +1,4 @@
-import React, {forwardRef} from "react"
+import React, { forwardRef } from "react"
 import Slider from "react-slick"
 import {
   ImageCarousel,
@@ -7,7 +7,7 @@ import {
 } from "./JoinTheCommunity.style"
 import { Carousel } from "../UIKit"
 
-export const JoinTheCommunity =  forwardRef(({}, ref) => {
+export const JoinTheCommunity = forwardRef(({}, ref) => {
   const settings = {
     dots: true,
     infinite: true,
