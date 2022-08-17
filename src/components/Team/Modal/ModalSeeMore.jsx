@@ -14,7 +14,7 @@ export const ModalSeeMore = ({ isActive, toggleModal, company }) => {
         <ModalText>
           <div>
             <button>
-              <Icon name="close" onClick={() => toggleModal()} color="black"/>
+              <Icon name="arrow-down" onClick={() => toggleModal()} color="black"/>
             </button>
           </div>
 

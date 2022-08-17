@@ -8,6 +8,15 @@ export const modalData = {
   erni: {
     img: '/assets/team/modal/erni.svg',
     alt: 'Erni Vales',
-    text: 'Erni Vales has been creating for over four decades. The 80’s, Erni’s favorite decade, is when He became an accomplished graffiti artist. Vales then began the first graffiti clothing company, L.E.S. Clothing Co. Thereafter, came the first graffiti furniture fabrication with Ferra Design, all while painting canvas, hosting gallery shows and painting NYC subway cars and walls. After continuing his career in Hollywood painting for celebrity album and magazine covers including Rolling Stone, Madonna, Elton John, Mariah Carey, Lil Kim and so many others, Erni went to Miami where he created murals in Wynwood and prominent restaurants.'
+    text: <>Erni Vales has been creating for over four decades. The 80’s, Erni’s
+            favorite decade, is when He became an accomplished graffiti artist.
+            Vales then began the first graffiti clothing company, L.E.S.
+            Clothing Co. Thereafter, came the first graffiti furniture
+            fabrication with Ferra Design, all while painting canvas, hosting
+            gallery shows and painting NYC subway cars and walls. <br/>
+            After continuing his career in Hollywood painting for celebrity album and
+            magazine covers including Rolling Stone, Madonna, Elton John, Mariah
+            Carey, Lil Kim and so many others, Erni went to Miami where he
+            created murals in Wynwood and prominent restaurants.</>
   }
 }
