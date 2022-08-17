@@ -1,20 +1,20 @@
-export const animatedTitle = (text) => {
+export const animatedTitle = text => {
   return text.split("").map((letter, index) => {
     if (letter === " ") {
       return (
         <span key={index} className="space">
           {letter}
         </span>
-      );
+      )
     }
-    return <span key={index}>{letter}</span>;
-  });
-};
+    return <span key={index}>{letter}</span>
+  })
+}
 
-export const generateSpaceClassNames = (array) => {
-    let classNames = ``;
-    array.forEach((n, i) => {
-        classNames += `
+export const generateSpaceClassNames = array => {
+  let classNames = ``
+  array.forEach((n, i) => {
+    classNames += `
             .mx-${i} {
                 margin: 0 ${n}px !important;
             }
@@ -57,8 +57,8 @@ export const generateSpaceClassNames = (array) => {
             .p-${i} {
                 padding: ${n}px !important;
             }
-        `;
-    });
+        `
+  })
 
-    return classNames;
-};
+  return classNames
+}

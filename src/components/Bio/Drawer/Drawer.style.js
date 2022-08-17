@@ -11,21 +11,21 @@ export const DrawerStyle = styled.aside`
   max-width: 1185px;
   width: 100%;
   height: 100%;
-  background-color: ${({theme}) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.white};
   padding: 30px 44px 0;
   transition: .5s;
   opacity: 0;
 
-  ${({opened}) =>
-          opened &&
-          css`
-            opacity: 1;
-            transform: translateX(0);
+  ${({ opened }) =>
+    opened &&
+    css`
+      opacity: 1;
+      transform: translateX(0);
 
-            &:before {
-              position: absolute;
-            }
-          `}
+      &:before {
+        position: absolute;
+      }
+    `}
   .scrollable-content {
     height: 100%;
   }
@@ -35,7 +35,7 @@ export const DrawerStyle = styled.aside`
 
 .drawer-header {
   padding-bottom: 16px;
-  border-bottom: 6px solid ${({theme}) => theme.colors.orange};
+  border-bottom: 6px solid ${({ theme }) => theme.colors.orange};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,7 @@ export const DrawerStyle = styled.aside`
 
 .title {
   text-transform: uppercase;
-  font-family: ${({theme}) => theme.font.secondary};
+  font-family: ${({ theme }) => theme.font.secondary};
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 0;
@@ -80,7 +80,7 @@ export const DrawerStyle = styled.aside`
             height: 6px;
             width: 6px;
             border-radius: 50%;
-            background-color: ${({theme}) => theme.colors.black};
+            background-color: ${({ theme }) => theme.colors.black};
             top: 14px;
             left: -16px;
           }
@@ -106,7 +106,7 @@ export const DrawerStyle = styled.aside`
   }
 }
 
-@media (max-width: ${({theme}) => theme.breakpoints.lg}) {
+@media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
   .project-list {
     li {
       padding: 20px 0;
@@ -130,7 +130,7 @@ export const DrawerStyle = styled.aside`
 
 }
 
-@media (max-width: ${({theme}) => theme.breakpoints.md}) {
+@media (max-width: ${({ theme }) => theme.breakpoints.md}) {
   padding: 30px 24px 0;
 
   .title {
@@ -144,7 +144,7 @@ export const DrawerStyle = styled.aside`
   }
 }
 
-@media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+@media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
   .title {
     font-size: 16px;
   }

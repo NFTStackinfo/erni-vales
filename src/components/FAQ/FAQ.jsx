@@ -1,21 +1,21 @@
-import React, { forwardRef, useState } from "react";
-import { FAQStyle } from "./FAQ.style";
-import Collapsible from "react-collapsible";
-import { Icon } from "../UIKit";
-import Fade from "react-reveal/Fade";
-import data from "./dataFAQ";
-import { theme } from "../../styles/global/theme";
+import React, { forwardRef, useState } from "react"
+import { FAQStyle } from "./FAQ.style"
+import Collapsible from "react-collapsible"
+import { Icon } from "../UIKit"
+import Fade from "react-reveal/Fade"
+import data from "./dataFAQ"
+import { theme } from "../../styles/global/theme"
 
 const FAQ = forwardRef((props, ref) => {
-  const [openPosition, setOpenPosition] = useState(null);
+  const [openPosition, setOpenPosition] = useState(null)
 
-  const handleTriggerClick = (position) => {
+  const handleTriggerClick = position => {
     if (openPosition === position) {
-      setOpenPosition(null);
+      setOpenPosition(null)
     } else {
-      setOpenPosition(position);
+      setOpenPosition(position)
     }
-  };
+  }
   return (
     <FAQStyle ref={ref}>
       <div className="container">
@@ -44,11 +44,11 @@ const FAQ = forwardRef((props, ref) => {
             >
               <div>{q.answer}</div>
             </Collapsible>
-          );
+          )
         })}
       </div>
     </FAQStyle>
-  );
-});
+  )
+})
 
-export default FAQ;
+export default FAQ

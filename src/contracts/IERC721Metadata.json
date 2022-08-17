@@ -345,15 +345,9 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
     "exportedSymbols": {
-      "IERC165": [
-        2869
-      ],
-      "IERC721": [
-        1897
-      ],
-      "IERC721Metadata": [
-        2311
-      ]
+      "IERC165": [2869],
+      "IERC721": [1897],
+      "IERC721Metadata": [2311]
     },
     "id": 2312,
     "license": "MIT",
@@ -361,12 +355,7 @@
     "nodes": [
       {
         "id": 2286,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:23:8"
       },
@@ -397,10 +386,7 @@
             "src": "247:7:8"
           }
         ],
-        "contractDependencies": [
-          1897,
-          2869
-        ],
+        "contractDependencies": [1897, 2869],
         "contractKind": "interface",
         "documentation": {
           "id": 2288,
@@ -410,11 +396,7 @@
         },
         "fullyImplemented": false,
         "id": 2311,
-        "linearizedBaseContracts": [
-          2311,
-          1897,
-          2869
-        ],
+        "linearizedBaseContracts": [2311, 1897, 2869],
         "name": "IERC721Metadata",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -632,15 +614,9 @@
   "legacyAST": {
     "absolutePath": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
     "exportedSymbols": {
-      "IERC165": [
-        2869
-      ],
-      "IERC721": [
-        1897
-      ],
-      "IERC721Metadata": [
-        2311
-      ]
+      "IERC165": [2869],
+      "IERC721": [1897],
+      "IERC721Metadata": [2311]
     },
     "id": 2312,
     "license": "MIT",
@@ -648,12 +624,7 @@
     "nodes": [
       {
         "id": 2286,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:23:8"
       },
@@ -684,10 +655,7 @@
             "src": "247:7:8"
           }
         ],
-        "contractDependencies": [
-          1897,
-          2869
-        ],
+        "contractDependencies": [1897, 2869],
         "contractKind": "interface",
         "documentation": {
           "id": 2288,
@@ -697,11 +665,7 @@
         },
         "fullyImplemented": false,
         "id": 2311,
-        "linearizedBaseContracts": [
-          2311,
-          1897,
-          2869
-        ],
+        "linearizedBaseContracts": [2311, 1897, 2869],
         "name": "IERC721Metadata",
         "nodeType": "ContractDefinition",
         "nodes": [

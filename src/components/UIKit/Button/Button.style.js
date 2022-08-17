@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
 export const ButtonStyle = styled.a`
   height: 62px;
@@ -22,7 +22,7 @@ export const ButtonStyle = styled.a`
   }
 
   ${({ variant }) =>
-    variant === 'primary' &&
+    variant === "primary" &&
     css`
       background-color: ${({ theme }) => theme.colors.black};
 
@@ -31,7 +31,7 @@ export const ButtonStyle = styled.a`
       }
     `}
   ${({ variant }) =>
-    variant === 'outlined' &&
+    variant === "outlined" &&
     css`
       background-color: transparent;
       border: 2px solid ${({ theme }) => theme.colors.black};

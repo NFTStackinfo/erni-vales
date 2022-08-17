@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const ConnectButtonStyle = styled.div`
   .mint-content {
@@ -21,12 +21,11 @@ export const ConnectButtonStyle = styled.div`
     padding: 8px 16px;
     height: 48px;
 
-    >span {
+    > span {
       width: 22px;
       text-align: center;
       color: ${({ theme }) => theme.colors.white};
     }
-
 
     button {
       background: transparent;

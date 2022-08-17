@@ -1,14 +1,14 @@
 export const socialList = [
-    {
-        name: 'twitter',
-        url: '#'
-    },
-    {
-        name: 'instagram',
-        url: '#'
-    },
-    {
-        name: 'discord',
-        url: '#'
-    },
+  {
+    name: "twitter",
+    url: "#",
+  },
+  {
+    name: "instagram",
+    url: "#",
+  },
+  {
+    name: "discord",
+    url: "#",
+  },
 ]

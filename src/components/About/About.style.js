@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const AboutStyle = styled.section`
   padding: 80px 0;
-  background-color: ${({theme}) => theme.colors.black};
-  color: ${({theme}) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.white};
 
   .title {
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     text-align: center;
     margin-bottom: 34px;
   }
@@ -17,7 +17,7 @@ export const AboutStyle = styled.section`
     text-align: center;
 
     span {
-      color: ${({theme}) => theme.colors.turquoiseBlue};
+      color: ${({ theme }) => theme.colors.turquoiseBlue};
     }
   }
 
@@ -28,7 +28,7 @@ export const AboutStyle = styled.section`
 
     path {
       &:nth-child(2) {
-        fill: ${({theme}) => theme.colors.black} !important;
+        fill: ${({ theme }) => theme.colors.black} !important;
       }
     }
   }
@@ -73,14 +73,14 @@ export const AboutStyle = styled.section`
     }
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.xl}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
     .carousel-wrapper {
       max-width: 90%;
       margin: 0 auto;
     }
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.lg}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     padding: 40px 0;
 
     .text {
@@ -88,9 +88,8 @@ export const AboutStyle = styled.section`
     }
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.md}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     .carousel {
-
       .slick-slide {
         .img {
           height: 500px;
@@ -112,7 +111,8 @@ export const AboutStyle = styled.section`
     }
 
     .slick-arrow {
-      &.slick-prev, &.slick-next {
+      &.slick-prev,
+      &.slick-next {
         height: 40px;
         width: 40px;
       }
@@ -132,7 +132,7 @@ export const AboutStyle = styled.section`
     }
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     .carousel-wrapper {
       max-width: 100%;
     }
@@ -162,7 +162,6 @@ export const AboutStyle = styled.section`
       }
     }
     .slick-arrow {
-
       &.slick-next {
         right: 24px;
       }
@@ -172,6 +171,4 @@ export const AboutStyle = styled.section`
       }
     }
   }
-
-
-`;
+`

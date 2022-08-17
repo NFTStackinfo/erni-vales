@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const SliderWrapper = styled.div`
   .slick-list,
@@ -277,4 +277,4 @@ export const SliderWrapper = styled.div`
     opacity: 0.75;
     color: #000;
   }
-`;
+`

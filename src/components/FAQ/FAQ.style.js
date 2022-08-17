@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const FAQStyle = styled.section`
   padding: 200px 0 160px;
@@ -68,4 +68,4 @@ export const FAQStyle = styled.section`
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding: 140px 0 80px;
   }
-`;
+`

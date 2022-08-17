@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const FooterStyle = styled.footer`
   text-align: center;
@@ -75,4 +75,4 @@ export const FooterStyle = styled.footer`
       align-items: center;
     }
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const BioStyle = styled.section`
   display: flex;
@@ -33,8 +33,6 @@ export const BioStyle = styled.section`
     flex-direction: column;
 
     padding: 60px 0 60px 20px;
-
-
   }
 
   .bio-footer {
@@ -48,17 +46,19 @@ export const BioStyle = styled.section`
   .bio-text {
     position: relative;
 
-
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
       height: 200px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(253, 250, 255, 0.6) 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(253, 250, 255, 0.6) 100%
+      );
     }
-
   }
 
   .bio-content-inner {
@@ -79,7 +79,6 @@ export const BioStyle = styled.section`
     }
   }
 
-
   .title {
     margin-bottom: 14px;
   }
@@ -94,9 +93,7 @@ export const BioStyle = styled.section`
     height: 50px;
   }
 
-
-
-  @media (max-width: ${({theme}) => theme.breakpoints.lg}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     h3 {
       font-size: 20px;
     }
@@ -105,7 +102,7 @@ export const BioStyle = styled.section`
     }
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.md}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: column-reverse;
 
     .text {
@@ -127,7 +124,7 @@ export const BioStyle = styled.section`
       padding-top: 14px;
     }
   }
-  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     .bio-footer {
       flex-direction: column;
     }
@@ -142,6 +139,4 @@ export const BioStyle = styled.section`
       padding: 40px 0;
     }
   }
-
-`;
-
+`

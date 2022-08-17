@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const RoadmapBody = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ export const RoadmapBody = styled.div`
       left: 70px;
     }
   }
-`;
+`
 
 export const RoadmapSection = styled.div`
   position: relative;
@@ -132,7 +132,7 @@ export const RoadmapSection = styled.div`
       }
     }
   }
-`;
+`
 
 const RoadmapStyled = styled.section`
   padding-top: 160px;
@@ -151,6 +151,6 @@ const RoadmapStyled = styled.section`
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     padding-top: 120px;
   }
-`;
+`
 
-export default RoadmapStyled;
+export default RoadmapStyled

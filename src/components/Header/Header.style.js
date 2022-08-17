@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const HeaderStyle = styled.header`
   position: fixed;
@@ -6,7 +6,7 @@ export const HeaderStyle = styled.header`
   left: 0;
   right: 0;
   z-index: 99;
-  transition: .2s;
+  transition: 0.2s;
 
   &.sticky {
     background: rgba(255, 255, 255, 0.7);
@@ -36,9 +36,7 @@ export const HeaderStyle = styled.header`
     }
   }
 
-
   .header-nav {
-
     .nav-bg {
       display: none;
     }
@@ -128,7 +126,6 @@ export const HeaderStyle = styled.header`
 
       .header-nav {
         height: calc(100% - 72px);
-
       }
     }
 
@@ -186,7 +183,6 @@ export const HeaderStyle = styled.header`
           }
         }
       }
-
     }
   }
 
@@ -202,4 +198,4 @@ export const HeaderStyle = styled.header`
       }
     }
   }
-`;
+`

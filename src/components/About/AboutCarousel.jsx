@@ -1,6 +1,6 @@
-import React, {useEffect, useMemo, useState} from 'react';
-import {Carousel, Icon} from "../UIKit";
-import {theme} from "../../styles/global/theme"
+import React, { useEffect, useMemo, useState } from "react"
+import { Carousel, Icon } from "../UIKit"
+import { theme } from "../../styles/global/theme"
 
 const Arrow = ({ className, onClick, direction, size = 24, color }) => {
   return (
@@ -33,10 +33,10 @@ const AboutCarousel = () => {
       adaptiveHeight: true,
       fade: true,
       nextArrow: (
-        <Arrow direction={"next"} size='100%' color={theme.colors.white} />
+        <Arrow direction={"next"} size="100%" color={theme.colors.white} />
       ),
       prevArrow: (
-        <Arrow direction={"back"} size='100%' color={theme.colors.white} />
+        <Arrow direction={"back"} size="100%" color={theme.colors.white} />
       ),
     }
   }, [])
@@ -62,24 +62,23 @@ const AboutCarousel = () => {
             slidesToShow: 5,
           },
         },
-      ]
+      ],
     }
   }, [])
 
-
   return (
-    <div className='carousel-wrapper'>
+    <div className="carousel-wrapper">
       <Carousel
         asNavFor={nav1}
         ref={slider => (slider2 = slider)}
         settings={settings}
-        className='carousel'
+        className="carousel"
       >
         {[...Array(17).keys()].map((_, index) => {
           return (
-            <div className='img-wrapper'>
+            <div className="img-wrapper">
               <div className="img">
-                <img src={`assets/about/${index + 1}.jpg`} alt=""/>
+                <img src={`assets/about/${index + 1}.jpg`} alt="" />
               </div>
             </div>
           )
@@ -89,21 +88,20 @@ const AboutCarousel = () => {
         asNavFor={nav2}
         ref={slider => (slider1 = slider)}
         settings={settings2}
-        className='carousel2'
+        className="carousel2"
       >
         {[...Array(17).keys()].map((_, index) => {
           return (
-            <div className='img-wrapper'>
+            <div className="img-wrapper">
               <div className="img">
-                <img src={`assets/about/${index + 1}.jpg`} alt=""/>
+                <img src={`assets/about/${index + 1}.jpg`} alt="" />
               </div>
             </div>
           )
         })}
       </Carousel>
     </div>
+  )
+}
 
-  );
-};
-
-export default AboutCarousel;
+export default AboutCarousel
