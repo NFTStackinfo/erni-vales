@@ -7,9 +7,11 @@ const About = forwardRef((props, ref) => {
   return (
     <AboutStyle ref={ref}>
       <div className="container">
-        <Fade bottom cascade>
+        <Fade bottom>
           <h1 className="title">About</h1>
-          <AboutCarousel />
+        </Fade>
+        <AboutCarousel />
+        <Fade bottom>
           <p className="text">
             Erni and frens is a 5,555 piece NFT project brought to you by
             celebrated artist Erni Vales. Paying homage to Erni’s NYC graffiti
