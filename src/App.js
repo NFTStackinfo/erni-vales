@@ -5,7 +5,6 @@ import Footer from "./components/Footer/Footer"
 import Roadmap from "./components/Roadmap/Roadmap"
 import { Team } from "./components/Team/Team"
 import FAQ from "./components/FAQ/FAQ"
-// import Preloader from "./components/Preloader/Preloader";
 import Preloader from "./components/Preloader/PreloaderDynamic"
 import { useLockedBody } from "./hooks/useLockedBody"
 import About from "./components/About/About"
@@ -70,9 +69,6 @@ function App() {
 
   return (
     <main>
-      {/*for static preloader*/}
-      {/*<Preloader className={loading ? "" : "hide-loader"} />*/}
-      {/*  for dynamic preloader*/}
       <Preloader onLoad={handleLoad} />
       <div className="main-wrapper">
         <Hero ref={heroRef} loaded={!loading}>
