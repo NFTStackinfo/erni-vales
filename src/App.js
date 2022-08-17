@@ -32,7 +32,7 @@ function App() {
     if (scrollTo) {
       scrollIntoView(refMapping[scrollTo]?.current, {
         align: {
-          top: 0,
+          top: 0
         },
       })
       setScrollTo(false)

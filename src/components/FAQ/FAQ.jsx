@@ -25,9 +25,11 @@ const FAQ = forwardRef((props, ref) => {
       <div className="wrapper" ref={ref}>
         <div className="container">
           <div className="content">
-            <div className="title">
-              <h2>FAQS</h2>
-            </div>
+            <Fade bottom>
+              <div className="title">
+                <h2>FAQS</h2>
+              </div>
+            </Fade>
 
             <QuestionsContainer>
               {data.map((q, i) => {

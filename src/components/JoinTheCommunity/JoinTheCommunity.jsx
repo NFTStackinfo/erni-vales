@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react"
-import Slider from "react-slick"
+import Fade from "react-reveal/Fade";
 import {
   ImageCarousel,
   JoinTheCommunityStyle,
@@ -11,6 +11,7 @@ export const JoinTheCommunity = forwardRef(({}, ref) => {
   const settings = {
     dots: true,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -46,6 +47,8 @@ export const JoinTheCommunity = forwardRef(({}, ref) => {
           </ImageCarousel>
 
           <TextContent>
+
+            <Fade bottom>
             <h2>Join the Community</h2>
 
             <p>
@@ -58,7 +61,9 @@ export const JoinTheCommunity = forwardRef(({}, ref) => {
             </p>
 
             <a href="#">Let's join</a>
+            </Fade>
           </TextContent>
+
         </div>
       </div>
     </JoinTheCommunityStyle>
