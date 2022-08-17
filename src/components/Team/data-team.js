@@ -1,29 +1,32 @@
-const teamList = [
+export const teamList = [
   {
-    position: "Paragraph",
-    name: "Name example",
-    img: "/assets/team/1.jpg",
+    img: "/assets/team/team-1.svg",
+    name: (
+      <>
+        NFT Stack <br />
+        Development
+      </>
+    ),
   },
+
   {
-    position: "Paragraph",
-    name: "Name example",
-    img: "/assets/team/1.jpg",
+    img: "/assets/team/team-2.svg",
+    name: (
+      <>
+        Erni <br /> And Frens
+      </>
+    ),
+    seeMore: "erni",
   },
+
   {
-    position: "Paragraph",
-    name: "Name example",
-    img: "/assets/team/1.jpg",
-  },
-  {
-    position: "Paragraph",
-    name: "Name example",
-    img: "/assets/team/1.jpg",
-  },
-  {
-    position: "Paragraph",
-    name: "Name example",
-    img: "/assets/team/1.jpg",
+    img: "/assets/team/team-3.svg",
+    name: (
+      <>
+        Agency <br />
+        Of Abundance
+      </>
+    ),
+    seeMore: "agency",
   },
 ]
-
-export default teamList

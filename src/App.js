@@ -10,6 +10,7 @@ import Preloader from "./components/Preloader/PreloaderDynamic"
 import { useLockedBody } from "./hooks/useLockedBody"
 import About from "./components/About/About"
 import Bio from "./components/Bio/Bio"
+import { JoinTheCommunity } from "./components/JoinTheCommunity/JoinTheCommunity"
 const scrollIntoView = require("scroll-into-view")
 
 function App() {
@@ -79,10 +80,12 @@ function App() {
         </Hero>
         <About ref={aboutRef} />
         <Bio ref={bioRef} />
-        {/*<Roadmap ref={roadmapRef} />*/}
         <Team ref={teamRef} />
-        {/*<FAQ ref={faqRef} />*/}
-        {/*<Footer />*/}
+        <Roadmap ref={roadmapRef} />
+        <FAQ ref={faqRef} />
+        <Team ref={teamRef} />
+        <JoinTheCommunity />
+        <Footer />
       </div>
     </main>
   )

@@ -139,6 +139,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   /*typography*/
+  h3, h4, h5, h6, p, a, span, div, button {
+    font-family: ${({ theme }) => theme.font.secondary};
+    font-weight: 400;
+  }
 
   h1, h2, .text-h1, .text-h2 {
     line-height: 1.1;
@@ -147,8 +151,17 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 900;
   }
 
+  h1 {
+    text-transform: uppercase;
+  }
+
   h1, .text-h1, h2, .text-h2 {
     font-size: ${({ theme }) => theme.font.size.h1.base};
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: ${({ theme }) => theme.font.size.h1.lg};
+    }
+
+
     @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
       font-size: ${({ theme }) => theme.font.size.h1.lg};
     }
@@ -156,8 +169,6 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
       font-size: ${({ theme }) => theme.font.size.h1.sm};
     }
-
-
   }
 
   .text-p1 {

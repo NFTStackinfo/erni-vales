@@ -4,10 +4,6 @@ export const socialList = [
     url: "#",
   },
   {
-    name: "instagram",
-    url: "#",
-  },
-  {
     name: "discord",
     url: "#",
   },
