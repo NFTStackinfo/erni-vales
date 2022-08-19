@@ -1,7 +1,7 @@
 export const socialList = [
   {
     name: "twitter",
-    url: "#",
+    url: "https://twitter.com/ErniandFrens",
   },
   {
     name: "discord",
