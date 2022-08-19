@@ -5,6 +5,7 @@ export const BioStyle = styled.section`
   align-items: center;
   min-height: 1076px;
   position: relative;
+  border-bottom: 12px solid ${({theme}) => theme.colors.black};
 
   .bio-wrapper {
     display: flex;
