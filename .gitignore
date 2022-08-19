@@ -6,8 +6,8 @@
 .pnp.js
 
 .idea
-#package-lock.json
-#yarn.lock
+package-lock.json
+yarn.lock
 
 # testing
 /coverage
@@ -27,5 +27,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .firebase
-#.firebaserc
-#firebase.json
+.firebaserc
+firebase.json
