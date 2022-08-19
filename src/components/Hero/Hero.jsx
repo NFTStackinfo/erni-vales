@@ -28,7 +28,7 @@ const Hero = forwardRef(({ children, loaded }, ref) => {
                 variant="outlined"
                 target="_blank"
                 className="discord"
-                href="#"
+                href="https://discord.gg/bbbEpJfv6k"
               >
                 JOIN DISCORD
               </Button>

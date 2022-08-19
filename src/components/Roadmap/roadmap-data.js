@@ -4,8 +4,7 @@ export const roadmapData = [
     content: (
       <>
         <p>
-          NFT powered tag icons to be projected at will in your favorite
-          metaverse.
+          NFT powered tag icons projected at will in your favorite metaverse.
         </p>
       </>
     ),
@@ -25,8 +24,7 @@ export const roadmapData = [
     content: (
       <>
         <p>
-          Hodlers gain access to exclusive works of physical and digital art by
-          Erni Vales shipped and air dropped to lucky hodlers.
+          Hodlers gain access to exclusive works of physical and digital art by Erni Vales shipped and air dropped to lucky hodlers.
         </p>
       </>
     ),
@@ -37,8 +35,7 @@ export const roadmapData = [
     content: (
       <>
         <p>
-          Member exclusive Erni and frens merch gets unleashed featuring limited
-          edition hoodies, hats and more.
+          Member exclusive Erni and Frens merch gets unleashed featuring limited edition gear, swag, and more.
         </p>
       </>
     ),
@@ -49,8 +46,7 @@ export const roadmapData = [
     content: (
       <>
         <p>
-          Member exclusive Erni and frens merch gets unleashed featuring limited
-          edition hoodies, hats and more.
+          Exclusive access to private Art Basel galleries and parties.
         </p>
       </>
     ),

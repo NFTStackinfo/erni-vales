@@ -5,6 +5,6 @@ export const socialList = [
   },
   {
     name: "discord",
-    url: "#",
+    url: "https://discord.gg/bbbEpJfv6k",
   },
 ]
