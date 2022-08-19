@@ -76,7 +76,6 @@ function App() {
         </Hero>
         <About ref={aboutRef} />
         <Bio ref={bioRef} />
-        <Team ref={teamRef} />
         <Roadmap ref={roadmapRef} />
         <FAQ ref={faqRef} />
         <Team ref={teamRef} />

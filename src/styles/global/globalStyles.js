@@ -113,6 +113,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   /*global*/
+  html, body {
+    overflow-x: hidden;
+  }
   body {
     font-family: ${({ theme }) => theme.font.secondary};
     font-size: ${({ theme }) => theme.font.size.p1.base};
@@ -120,8 +123,8 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: 1.15;
     background: ${({ theme }) => theme.colors.white};
-    overflow-x: hidden;
   }
+
 
   .container {
     max-width: 1200px;
