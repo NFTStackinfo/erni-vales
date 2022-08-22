@@ -10,7 +10,8 @@ export const teamList = [
   },
 
   {
-    img: "/assets/team/team-2.svg",
+    img: "logo.png",
+    // img: "/assets/team/team-2.svg",
     name: (
       <>
         Erni <br /> And Frens
