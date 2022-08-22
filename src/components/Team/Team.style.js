@@ -114,6 +114,11 @@ export const TeamList = styled.div`
     }
 
     &-3 {
+      max-width: 130px;
+
+      img {
+        width: 100%;
+      }
       @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
         margin-top: 60px;
       }

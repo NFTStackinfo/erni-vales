@@ -21,7 +21,7 @@ export const teamList = [
   },
 
   {
-    img: "/assets/team/team-3.svg",
+    img: "/assets/team/team-3.png",
     name: (
       <>
         Agency <br />
