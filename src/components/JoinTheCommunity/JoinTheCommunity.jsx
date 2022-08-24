@@ -60,7 +60,13 @@ export const JoinTheCommunity = forwardRef(({}, ref) => {
               access pass to a universe of gamified utility.
             </p>
 
-            <a href="#">Let's join</a>
+            <a
+              href="https://discord.gg/bbbEpJfv6k"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Let's join
+            </a>
             </Fade>
           </TextContent>
 
