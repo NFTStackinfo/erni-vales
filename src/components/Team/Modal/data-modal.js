@@ -1,12 +1,13 @@
 export const modalData = {
   agency: {
-    img: "/assets/team/modal/agency.svg",
+    // img: "/assets/team/modal/agency.svg",
+    img: "/assets/team/team-3.png",
     alt: "Agency of Abundance",
     text: "Agency of Abundance is a blockchain consulting agency specializing in Web3 software development, NFT marketing and project management. As early adopters in blockchain technologies, our team has co-created prominent blue chip projects that have shaped this space and influenced blockchain policy and legislation. Our mission is to create and implement systems that attract abundance. The AoA has proudly assembled a network of pioneering thought leaders solving the world’s biggest challenges using blockchain technology. Together we are abundant.",
   },
 
   erni: {
-    img: "/assets/team/modal/erni.svg",
+    img: "/logo.png",
     alt: "Erni Vales",
     text: (
       <>
