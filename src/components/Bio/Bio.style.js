@@ -1,4 +1,13 @@
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
+
+
+const hithere = keyframes`
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+`
 
 export const BioStyle = styled.section`
   display: flex;
@@ -92,6 +101,7 @@ export const BioStyle = styled.section`
   }
   .see-more {
     height: 50px;
+    animation: ${hithere} 1.7s ease infinite;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {

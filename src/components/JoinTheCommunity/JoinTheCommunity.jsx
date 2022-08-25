@@ -52,7 +52,7 @@ export const JoinTheCommunity = forwardRef(({}, ref) => {
             <h2>Join the Community</h2>
 
             <p>
-              Erni and frens is a community of blockchain enthusiasts, as well
+              Erni and Frens is a community of blockchain enthusiasts, as well
               as art & music lovers. When you buy an Erni and Frens NFT, you’re
               not only purchasing an avatar or an exclusive piece of art. You
               are earning community access to a collective whose benefits and
