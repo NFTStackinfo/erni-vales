@@ -111,6 +111,11 @@ export const TeamList = styled.div`
       }
 
       grid-area: img-2;
+      max-width: 204px;
+
+      img {
+        width: 100%;
+      }
     }
 
     &-3 {

@@ -25,7 +25,7 @@ export const HeaderStyle = styled.header`
   }
 
   .logo {
-    max-width: 135px;
+    max-width: 170px;
     margin-right: 24px;
     display: block;
     cursor: pointer;
